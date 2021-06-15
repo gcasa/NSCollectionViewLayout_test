@@ -23,5 +23,17 @@
     // Insert code here to tear down your application
 }
 
+// Datasource
+- (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+- (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+
+// Delegate 
 
 @end
