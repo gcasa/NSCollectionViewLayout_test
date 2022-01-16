@@ -11,7 +11,7 @@
 @interface AppDelegate ()
 
 @property (strong) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSCollectionView *collectionView;
+@property (strong) IBOutlet NSCollectionView *collectionView;
 
 @end
 
@@ -40,7 +40,7 @@
 {
     MyItem *item = [[MyItem alloc] init];
     
-    item.title = [NSString stringWithFormat: @"%ld, %ld", indexPath.section, indexPath.item];
+    item.title = [NSString stringWithFormat: @"%ld, %ld", [indexPath section], [indexPath item]];
 
     return item;
 }
