@@ -6,10 +6,13 @@
 //
 
 #import "AppDelegate.h"
+#import "MyItem.h"
 
 @interface AppDelegate ()
 
 @property (strong) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSCollectionView *collectionView;
+
 @end
 
 @implementation AppDelegate
@@ -23,15 +26,23 @@
     // Insert code here to tear down your application
 }
 
+// Actions
+- (IBAction)changeLayout:(id)sender {
+}
+
 // Datasource
 - (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    return 5;
 }
 
 - (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    MyItem *item = [[MyItem alloc] init];
+    
+    item.title = [NSString stringWithFormat: @"%ld, %ld", indexPath.section, indexPath.item];
+
+    return item;
 }
 
 // Delegate 
