@@ -58,7 +58,7 @@
 // Datasource
 - (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 5;
+    return 15;
 }
 
 - (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
@@ -66,7 +66,8 @@
     MyItem *item = [[MyItem alloc] init];
     
     item.title = [NSString stringWithFormat: @"%ld, %ld", [indexPath section], [indexPath item]];
-
+    NSLog(@"title = %@", item.title);
+    
     return item;
 }
 
