@@ -28,6 +28,27 @@
 
 // Actions
 - (IBAction)changeLayout:(id)sender {
+    NSUInteger i = [sender indexOfSelectedItem];
+    NSCollectionViewLayout *layout = nil;
+    
+    NSLog(@"Change layout %ld", i);
+    if (i == 0)
+    {
+        layout = [[NSCollectionViewFlowLayout alloc] init];
+    }
+    else if (i == 1)
+    {
+        layout = [[NSCollectionViewGridLayout alloc] init];
+    }
+    else if (i == 2)
+    {
+    }
+    else if (i == 3)
+    {
+    }
+    
+    self.collectionView.collectionViewLayout = layout;
+    [self.collectionView layout];
 }
 
 // Datasource

@@ -694,14 +694,17 @@
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-15-MpV">
                         <rect key="frame" x="17" y="3" width="141" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="Grid" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="YMp-FY-9BT" id="SLG-Qz-miR">
+                        <popUpButtonCell key="cell" type="push" title="Flow" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="YMp-FY-9BT" id="SLG-Qz-miR">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="m7s-kS-QOD">
                                 <items>
-                                    <menuItem title="Grid" state="on" id="YMp-FY-9BT"/>
-                                    <menuItem title="Flow" id="QdO-xm-Yst"/>
+                                    <menuItem title="Flow" state="on" id="YMp-FY-9BT"/>
+                                    <menuItem title="Grid" id="QdO-xm-Yst"/>
                                     <menuItem title="Custom" keyEquivalent="C" id="gCg-9L-5j1">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Content Array" id="h1v-IT-nMV">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                 </items>
