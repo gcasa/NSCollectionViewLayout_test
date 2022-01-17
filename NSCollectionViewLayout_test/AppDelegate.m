@@ -5,6 +5,10 @@
 //  Created by Gregory Casamento on 6/14/21.
 //
 
+#import <AppKit/NSCollectionViewLayout.h>
+#import <AppKit/NSCollectionViewGridLayout.h>
+#import <AppKit/NSCollectionViewFlowLayout.h>
+
 #import "AppDelegate.h"
 #import "MyItem.h"
 
