@@ -72,7 +72,7 @@
     MyItem *item = [[MyItem alloc] init];
     
     item.title = [NSString stringWithFormat: @"%ld, %ld", [indexPath section], [indexPath item]];
-    NSLog(@"title = %@", item.title);
+    NSLog(@"title = %@ -- item = %@", item.title, item);
     
     return item;
 }
