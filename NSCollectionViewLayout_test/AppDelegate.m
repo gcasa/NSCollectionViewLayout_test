@@ -56,12 +56,18 @@
 }
 
 // Datasource
-- (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger) collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 15;
+    return 5;
 }
 
-- (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger) numberOfSectionsInCollectionView:(NSCollectionView *)collectionView
+{
+    return 2;
+}
+
+- (NSCollectionViewItem *) collectionView:(NSCollectionView *)collectionView
+      itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
     MyItem *item = [[MyItem alloc] init];
     

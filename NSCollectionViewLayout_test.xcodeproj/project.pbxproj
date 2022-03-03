@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		149754D92793E83B004BD4DC /* MyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 149754D72793E83B004BD4DC /* MyItem.m */; };
 		149754DA2793E83B004BD4DC /* MyItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149754D82793E83B004BD4DC /* MyItem.xib */; };
-		149754DC2793E906004BD4DC /* GNUstep_Logo_NoText_128 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 149754DB2793E906004BD4DC /* GNUstep_Logo_NoText_128 copy.png */; };
+		149754DC2793E906004BD4DC /* GNUstep_Logo_NoText_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 149754DB2793E906004BD4DC /* GNUstep_Logo_NoText_128.png */; };
 		149754DE2793EA43004BD4DC /* GNUstep_Logo_NoText_512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149754DD2793EA43004BD4DC /* GNUstep_Logo_NoText_512.jpg */; };
 		149F28132677D9A6001EE1D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F28122677D9A6001EE1D0 /* AppDelegate.m */; };
 		149F28152677D9A9001EE1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149F28142677D9A9001EE1D0 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		149754D62793E83B004BD4DC /* MyItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyItem.h; sourceTree = "<group>"; };
 		149754D72793E83B004BD4DC /* MyItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyItem.m; sourceTree = "<group>"; };
 		149754D82793E83B004BD4DC /* MyItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyItem.xib; sourceTree = "<group>"; };
-		149754DB2793E906004BD4DC /* GNUstep_Logo_NoText_128 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GNUstep_Logo_NoText_128 copy.png"; sourceTree = "<group>"; };
+		149754DB2793E906004BD4DC /* GNUstep_Logo_NoText_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GNUstep_Logo_NoText_128.png; sourceTree = "<group>"; };
 		149754DD2793EA43004BD4DC /* GNUstep_Logo_NoText_512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GNUstep_Logo_NoText_512.jpg; sourceTree = "<group>"; };
 		149F280E2677D9A6001EE1D0 /* NSCollectionViewLayout_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewLayout_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149F28112677D9A6001EE1D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 				149F28162677D9A9001EE1D0 /* MainMenu.xib */,
 				149F28192677D9A9001EE1D0 /* Info.plist */,
 				149754DD2793EA43004BD4DC /* GNUstep_Logo_NoText_512.jpg */,
-				149754DB2793E906004BD4DC /* GNUstep_Logo_NoText_128 copy.png */,
+				149754DB2793E906004BD4DC /* GNUstep_Logo_NoText_128.png */,
 				149F281A2677D9A9001EE1D0 /* main.m */,
 				149F281C2677D9A9001EE1D0 /* NSCollectionViewLayout_test.entitlements */,
 				149754D62793E83B004BD4DC /* MyItem.h */,
@@ -137,7 +137,7 @@
 			files = (
 				149F28152677D9A9001EE1D0 /* Assets.xcassets in Resources */,
 				149F28182677D9A9001EE1D0 /* MainMenu.xib in Resources */,
-				149754DC2793E906004BD4DC /* GNUstep_Logo_NoText_128 copy.png in Resources */,
+				149754DC2793E906004BD4DC /* GNUstep_Logo_NoText_128.png in Resources */,
 				149754DE2793EA43004BD4DC /* GNUstep_Logo_NoText_512.jpg in Resources */,
 				149754DA2793E83B004BD4DC /* MyItem.xib in Resources */,
 			);
@@ -287,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NSCollectionViewLayout_test/NSCollectionViewLayout_test.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 768T4SN737;
@@ -307,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NSCollectionViewLayout_test/NSCollectionViewLayout_test.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 768T4SN737;
