@@ -21,17 +21,20 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
     // Insert code here to initialize your application
 }
 
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
+- (void)applicationWillTerminate:(NSNotification *)aNotification
+{
     // Insert code here to tear down your application
 }
 
 // Actions
-- (IBAction)changeLayout:(id)sender {
+- (IBAction)changeLayout:(id)sender
+{
     NSUInteger i = [sender indexOfSelectedItem];
     NSCollectionViewLayout *layout = nil;
     
@@ -49,6 +52,7 @@
     }
     else if (i == 3)
     {
+        layout = nil;
     }
     
     self.collectionView.collectionViewLayout = layout;
