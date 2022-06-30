@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MyItem">
             <connections>
+                <outlet property="imageView" destination="hNw-76-m8L" id="QBA-3p-h0D"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="ndR-BU-LhR"/>
             </connections>
         </customObject>
