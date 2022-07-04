@@ -84,5 +84,9 @@
 }
 
 // Delegate 
-
+- (NSSet<NSIndexPath *> *)collectionView:(NSCollectionView *)collectionView shouldSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
+{
+    NSLog(@"indexPaths = %@", indexPaths);
+    return indexPaths;
+}
 @end
