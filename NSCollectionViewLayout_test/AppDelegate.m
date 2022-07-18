@@ -25,7 +25,7 @@
 {
     // Insert code here to initialize your application
     
-    NSLog(@"items = %@", [self.collectionView visibleItems]);
+    NSLog(@"visitbleItems = %@", [self.collectionView visibleItems]);
 }
 
 
@@ -89,4 +89,5 @@
     NSLog(@"indexPaths = %@", indexPaths);
     return indexPaths;
 }
+
 @end
