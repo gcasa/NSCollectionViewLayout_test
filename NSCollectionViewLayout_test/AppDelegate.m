@@ -43,11 +43,21 @@
     NSLog(@"Change layout %ld", i);
     if (i == 0)
     {
-        layout = [[NSCollectionViewFlowLayout alloc] init];
+        NSCollectionViewFlowLayout *l = [[NSCollectionViewFlowLayout alloc] init];
+        
+        l.minimumLineSpacing = 10.0;
+        l.itemSize = NSMakeSize(50.0, 50.0);
+        layout = l;
     }
     else if (i == 1)
     {
-        layout = [[NSCollectionViewGridLayout alloc] init];
+        NSCollectionViewGridLayout *l = [[NSCollectionViewGridLayout alloc] init];
+
+        l.maximumNumberOfRows = 5;
+        l.maximumNumberOfColumns = 5;
+        l.maximumItemSize = NSMakeSize(100.0, 100.0);
+        l.minimumItemSize = NSMakeSize(50.0, 50.0);
+        layout = l;
     }
     else if (i == 2)
     {
