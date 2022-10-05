@@ -15,6 +15,7 @@
 		149F28152677D9A9001EE1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149F28142677D9A9001EE1D0 /* Assets.xcassets */; };
 		149F28182677D9A9001EE1D0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149F28162677D9A9001EE1D0 /* MainMenu.xib */; };
 		149F281B2677D9A9001EE1D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F281A2677D9A9001EE1D0 /* main.m */; };
+		14FB6E5028ED765000E14E65 /* TestCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FB6E4F28ED765000E14E65 /* TestCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		149F28192677D9A9001EE1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149F281A2677D9A9001EE1D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		149F281C2677D9A9001EE1D0 /* NSCollectionViewLayout_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSCollectionViewLayout_test.entitlements; sourceTree = "<group>"; };
+		14FB6E4E28ED765000E14E65 /* TestCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewLayout.h; sourceTree = "<group>"; };
+		14FB6E4F28ED765000E14E65 /* TestCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				149754D62793E83B004BD4DC /* MyItem.h */,
 				149754D72793E83B004BD4DC /* MyItem.m */,
 				149754D82793E83B004BD4DC /* MyItem.xib */,
+				14FB6E4E28ED765000E14E65 /* TestCollectionViewLayout.h */,
+				14FB6E4F28ED765000E14E65 /* TestCollectionViewLayout.m */,
 			);
 			path = NSCollectionViewLayout_test;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			files = (
 				149754D92793E83B004BD4DC /* MyItem.m in Sources */,
 				149F281B2677D9A9001EE1D0 /* main.m in Sources */,
+				14FB6E5028ED765000E14E65 /* TestCollectionViewLayout.m in Sources */,
 				149F28132677D9A6001EE1D0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
