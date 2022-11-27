@@ -20,4 +20,9 @@
     NSLog(@"in viewDidLoad");
 }
 
+- (IBAction)itemAction:(id)sender
+{
+    NSLog(@"Action called %@, it should NOT be called", sender);
+}
+
 @end

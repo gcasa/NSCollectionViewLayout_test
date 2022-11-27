@@ -9,6 +9,5 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSCollectionViewDataSource, NSCollectionViewDelegate>
 
-
 @end
 
