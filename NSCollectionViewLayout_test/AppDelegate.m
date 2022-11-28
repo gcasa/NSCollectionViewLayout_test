@@ -26,6 +26,10 @@
     // Insert code here to initialize your application
     
     NSLog(@"visitbleItems = %@", [self.collectionView visibleItems]);
+    
+    NSLog(@"GapIndicator = %@", NSCollectionElementKindInterItemGapIndicator);
+    NSLog(@"Header = %@", NSCollectionElementKindSectionHeader);
+    NSLog(@"Footer = %@", NSCollectionElementKindSectionFooter);
 }
 
 
