@@ -11,6 +11,7 @@
 
 #import "AppDelegate.h"
 #import "MyItem.h"
+#import "TestCollectionViewLayout.h"
 
 @interface AppDelegate ()
 
@@ -24,12 +25,15 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    srand48(time(0));
     
     NSLog(@"visitbleItems = %@", [self.collectionView visibleItems]);
     
     NSLog(@"GapIndicator = %@", NSCollectionElementKindInterItemGapIndicator);
     NSLog(@"Header = %@", NSCollectionElementKindSectionHeader);
     NSLog(@"Footer = %@", NSCollectionElementKindSectionFooter);
+    
+    self.arrayController.content = @[@"Test1", @"Test2", @"Test3", @"Test4"];
 }
 
 
@@ -45,30 +49,56 @@
     NSCollectionViewLayout *layout = nil;
     
     NSLog(@"Change layout %ld", i);
-    if (i == 0)
+    if (i == 0) // flow
     {
         NSCollectionViewFlowLayout *l = [[NSCollectionViewFlowLayout alloc] init];
         
+        NSLog(@"Flow layout...");
         l.minimumLineSpacing = 10.0;
         l.itemSize = NSMakeSize(50.0, 50.0);
         layout = l;
+
+        [self.collectionView setDelegate: self];
+        [self.collectionView setDataSource: self];
     }
-    else if (i == 1)
+    else if (i == 1) // grid
     {
         NSCollectionViewGridLayout *l = [[NSCollectionViewGridLayout alloc] init];
 
+        NSLog(@"Grid layout...");
         l.maximumNumberOfRows = 5;
         l.maximumNumberOfColumns = 5;
         l.maximumItemSize = NSMakeSize(100.0, 100.0);
         l.minimumItemSize = NSMakeSize(50.0, 50.0);
         layout = l;
+        
+        [self.collectionView setDelegate: self];
+        [self.collectionView setDataSource: self];
+
     }
-    else if (i == 2)
+    else if (i == 2) // compositional
     {
+        NSLog(@"Compositional layout...");
+        [self.collectionView setDelegate: self];
+        [self.collectionView setDataSource: self];
     }
-    else if (i == 3)
+    else if (i == 3) // custom
     {
+        TestCollectionViewLayout *l = [[TestCollectionViewLayout alloc] init];
+
+        NSLog(@"Custom layout...");
+        layout = l;
+        [self.collectionView setDelegate: self];
+        [self.collectionView setDataSource: self];
+    }
+    else if (i == 4)
+    {
+        NSLog(@"Legacy/Array Content layout...");
         layout = nil;
+        [self.collectionView setDelegate: nil];
+        [self.collectionView setDataSource: nil];
+
+        // self.collectionView.content
     }
     
     self.collectionView.collectionViewLayout = layout;

@@ -9,5 +9,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSCollectionViewDataSource, NSCollectionViewDelegate>
 
+@property (weak) IBOutlet NSArrayController *arrayController;
+
 @end
 
