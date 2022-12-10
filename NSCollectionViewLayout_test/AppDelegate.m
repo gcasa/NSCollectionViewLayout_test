@@ -102,7 +102,7 @@
     }
     
     self.collectionView.collectionViewLayout = layout;
-    [self.collectionView layout];
+    // [self.collectionView layout];
 }
 
 // Datasource
