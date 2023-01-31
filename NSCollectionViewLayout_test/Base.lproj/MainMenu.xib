@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,8 +12,10 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <arrayController id="7MP-mB-q4P"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="arrayController" destination="7MP-mB-q4P" id="TU4-qT-BZf"/>
                 <outlet property="collectionView" destination="Xm8-Xn-y3y" id="kiC-tY-lNe"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -701,6 +702,9 @@
                                 <items>
                                     <menuItem title="Flow" state="on" id="YMp-FY-9BT"/>
                                     <menuItem title="Grid" id="QdO-xm-Yst"/>
+                                    <menuItem title="Compositional" id="XG4-pe-fk2">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem title="Custom" keyEquivalent="C" id="gCg-9L-5j1">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
@@ -728,6 +732,7 @@
                                         <size key="itemSize" width="50" height="50"/>
                                     </collectionViewFlowLayout>
                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="secondaryBackgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
                                         <outlet property="dataSource" destination="Voe-Tx-rLC" id="LJf-Et-cvt"/>
                                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PcB-Fo-UWb"/>
