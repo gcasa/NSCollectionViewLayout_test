@@ -34,6 +34,8 @@
     NSLog(@"Footer = %@", NSCollectionElementKindSectionFooter);
     
     self.arrayController.content = @[@"Test1", @"Test2", @"Test3", @"Test4"];
+    
+    NSLog(@"selectionIndexes: %@", self.collectionView.selectionIndexes);
 }
 
 
@@ -134,4 +136,9 @@
     return indexPaths;
 }
 
+- (void)collectionView:(NSCollectionView *)collectionView didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
+{
+    NSLog(@"selectionIndexes: %@", [self.collectionView selectionIndexes]);
+    NSLog(@"selectionIndexPaths: %@", [self.collectionView selectionIndexPaths]);
+}
 @end
