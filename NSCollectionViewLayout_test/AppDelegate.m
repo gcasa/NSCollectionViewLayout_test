@@ -93,15 +93,6 @@
         [self.collectionView setDelegate: self];
         [self.collectionView setDataSource: self];
     }
-    else if (i == 4)
-    {
-        NSLog(@"Legacy/Array Content layout...");
-        layout = nil;
-        [self.collectionView setDelegate: nil];
-        [self.collectionView setDataSource: nil];
-
-        // self.collectionView.content
-    }
     
     self.collectionView.collectionViewLayout = layout;
     // [self.collectionView layout];
