@@ -33,9 +33,9 @@
     NSLog(@"Header = %@", NSCollectionElementKindSectionHeader);
     NSLog(@"Footer = %@", NSCollectionElementKindSectionFooter);
     
-    self.arrayController.content = @[@"Test1", @"Test2", @"Test3", @"Test4"];
+    // self.arrayController.content = @[@"Test1", @"Test2", @"Test3", @"Test4"];
     
-    NSLog(@"selectionIndexes: %@", self.collectionView.selectionIndexes);
+    // NSLog(@"selectionIndexes: %@", self.collectionView.selectionIndexes);
 }
 
 
@@ -106,7 +106,11 @@
 
 - (NSInteger) numberOfSectionsInCollectionView:(NSCollectionView *)collectionView
 {
-    return 2;
+    return 1; // this allows the selectionIndexes and selectionIndexPaths values to be synced...
+    // This happens because if section != 0, then the indexPaths can't be added to the index set as it only
+    // supports one section.  I may make this a dynamic property going forward to improve the test.
+    
+    // return 2;
 }
 
 - (NSCollectionViewItem *) collectionView:(NSCollectionView *)collectionView
